@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Navigation Controller.xcodeproj">
+      location = "self:/Users/carlos.V/Downloads/NC_GoogleMaps/NC-GoogleMaps.xcodeproj">
    </FileRef>
 </Workspace>
