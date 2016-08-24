@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6864F5F01D6E397600DF5014 /* Maps.m in Sources */ = {isa = PBXBuildFile; fileRef = 6864F5EF1D6E397600DF5014 /* Maps.m */; };
 		AB8A95A51D3ED37A006E6031 /* AguaPrieta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB8A95851D3ED37A006E6031 /* AguaPrieta.jpg */; };
 		AB8A95A61D3ED37A006E6031 /* Bahia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB8A95861D3ED37A006E6031 /* Bahia.jpg */; };
 		AB8A95A71D3ED37A006E6031 /* Cancun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AB8A95871D3ED37A006E6031 /* Cancun.jpg */; };
@@ -55,6 +56,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6864F5EE1D6E397600DF5014 /* Maps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maps.h; sourceTree = "<group>"; };
+		6864F5EF1D6E397600DF5014 /* Maps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Maps.m; sourceTree = "<group>"; };
 		AB8A95851D3ED37A006E6031 /* AguaPrieta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AguaPrieta.jpg; sourceTree = "<group>"; };
 		AB8A95861D3ED37A006E6031 /* Bahia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bahia.jpg; sourceTree = "<group>"; };
 		AB8A95871D3ED37A006E6031 /* Cancun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cancun.jpg; sourceTree = "<group>"; };
@@ -220,6 +223,8 @@
 				ABBAACFA1D26BDA0003D4AE3 /* DestinationDetails.m */,
 				ABBAAD361D27199D003D4AE3 /* DescriptionCity.h */,
 				ABBAAD371D27199D003D4AE3 /* DescriptionCity.m */,
+				6864F5EE1D6E397600DF5014 /* Maps.h */,
+				6864F5EF1D6E397600DF5014 /* Maps.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -348,6 +353,7 @@
 				ABBAAD381D27199D003D4AE3 /* DescriptionCity.m in Sources */,
 				AB9664521D26112C009190CE /* cellHome.m in Sources */,
 				AB9664341D260B05009190CE /* main.m in Sources */,
+				6864F5F01D6E397600DF5014 /* Maps.m in Sources */,
 				ABBAACFB1D26BDA0003D4AE3 /* DestinationDetails.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

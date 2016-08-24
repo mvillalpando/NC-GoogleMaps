@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ogq-R2-alb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ogq-R2-alb">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -30,6 +30,7 @@
                     <navigationItem key="navigationItem" id="d4k-Nj-cZB"/>
                     <connections>
                         <segue destination="Xlo-cf-CfJ" kind="push" identifier="DestinationDetails" id="C5G-ob-4Js"/>
+                        <segue destination="2BA-Mu-2cc" kind="push" id="BP5-3J-4dE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -76,24 +77,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SanSebastian.png" id="xnI-pG-I3B" userLabel="imgDescription">
-                                <rect key="frame" x="0.0" y="64" width="320" height="216"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="208"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Sebastian del Oeste" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SuM-W1-VSh" userLabel="lblCity">
-                                <rect key="frame" x="0.0" y="313" width="320" height="21"/>
+                                <rect key="frame" x="0.0" y="292" width="320" height="21"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="19"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e1v-Yy-Edt" userLabel="lblDescription">
-                                <rect key="frame" x="8" y="352" width="305" height="196"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e1v-Yy-Edt" userLabel="lblDescription">
+                                <rect key="frame" x="5" y="324" width="310" height="176"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                <string key="text">San Sebastián del Oeste es un municipio y población del estado de Jalisco, México. Se localiza al oeste del estado, en la Región Sierra Occidental. Su extensión territorial es de 1400,13 km2. Según el II Conteo de Población y Vivienda de 2005, el municipio tiene 5.626 habitantes y se dedican principalmente al sector primario.2 Es una población minera que tuvo su auge en tiempos de la colonia, llegó a tener hasta 20.000 habitantes; sin embargo su población disminuyó en el siglo XIX a causa del cierre de las minas.</string>
+                                <string key="text">San Sebastián del Oeste es un municipio y población del estado de Jalisco, México. Se localiza al oeste del estado, en la Región Sierra Occidental. Su extensión territorial es de 1400,13 km2. Según el II Conteo de Población y Vivienda de 2005, el municipio tiene 5.626 habitantes y se dedican principalmente al sector primario.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ref-CB-LYs" userLabel="lblmapa">
+                                <rect key="frame" x="101" y="509" width="118" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                <state key="normal" title="Ver mapa">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -107,6 +118,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gnr-09-26a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1077" y="272"/>
+        </scene>
+        <!--Maps-->
+        <scene sceneID="5XC-lm-Re9">
+            <objects>
+                <viewController storyboardIdentifier="Maps" id="2BA-Mu-2cc" customClass="Maps" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nio-Se-Ms2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fp8-ae-MUz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GmT-VT-0rd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1476" y="272"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Ly-Ny-lT0">
