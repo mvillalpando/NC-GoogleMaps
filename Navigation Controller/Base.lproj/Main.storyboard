@@ -30,7 +30,6 @@
                     <navigationItem key="navigationItem" id="d4k-Nj-cZB"/>
                     <connections>
                         <segue destination="Xlo-cf-CfJ" kind="push" identifier="DestinationDetails" id="C5G-ob-4Js"/>
-                        <segue destination="2BA-Mu-2cc" kind="push" id="BP5-3J-4dE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -104,15 +103,20 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnMapsPressed:" destination="5d7-7m-O8q" eventType="touchUpInside" id="KmQ-xh-CBv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="71d-V3-var"/>
                     <connections>
+                        <outlet property="btnMaps" destination="ref-CB-LYs" id="cfn-PN-oKv"/>
                         <outlet property="imgDescription" destination="xnI-pG-I3B" id="65q-V4-LP7"/>
                         <outlet property="lblCity" destination="SuM-W1-VSh" id="5lc-yl-i1j"/>
                         <outlet property="lblDescription" destination="e1v-Yy-Edt" id="blW-fP-uIj"/>
+                        <segue destination="2BA-Mu-2cc" kind="push" identifier="Maps" id="wiH-36-DJJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gnr-09-26a" userLabel="First Responder" sceneMemberID="firstResponder"/>

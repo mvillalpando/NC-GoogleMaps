@@ -30,4 +30,7 @@
 }
 
 
+- (IBAction)btnMapsPressed:(id)sender {
+    [self performSegueWithIdentifier:@"Maps" sender:self];
+}
 @end
