@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@import GoogleMaps;
 
 @interface Maps : UIViewController
 

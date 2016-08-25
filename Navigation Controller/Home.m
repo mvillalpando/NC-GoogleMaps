@@ -7,6 +7,7 @@
 //
 
 #import "Home.h"
+@import GoogleMaps;
 
 @interface Home ()
 @property NSMutableArray *destinationTitles;
