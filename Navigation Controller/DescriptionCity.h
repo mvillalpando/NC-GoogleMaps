@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Maps.h"
 
 @interface DescriptionCity : UIViewController
 @property NSString *dTitles;
 @property NSString *dDescriptions;
 @property NSString *dPhotos;
+@property double coorLatitude;
+@property double coorLongitude;
+
 
 @property (strong, nonatomic) IBOutlet UILabel *lblDescription;
 @property (strong, nonatomic) IBOutlet UILabel *lblCity;

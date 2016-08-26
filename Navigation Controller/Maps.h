@@ -11,4 +11,7 @@
 
 @interface Maps : UIViewController
 
+@property double locationLatitude;
+@property double locationLongitude;
+
 @end
